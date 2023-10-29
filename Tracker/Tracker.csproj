@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16D99D15-E9BB-46BB-90C0-9AAD0DA057DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tracker</RootNamespace>
+    <AssemblyName>Tracker</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dal">
+      <HintPath>..\Dal\bin\Debug\Dal.dll</HintPath>
+    </Reference>
+    <Reference Include="Entities">
+      <HintPath>..\Dal\bin\Debug\Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMoniter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMoniter.Designer.cs">
+      <DependentUpon>FrmMoniter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhaseTrackAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhaseTrackAdmin.Designer.cs">
+      <DependentUpon>FrmPhaseTrackAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhaseTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhaseTrack.Designer.cs">
+      <DependentUpon>FrmPhaseTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmtaskMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmtaskMaster.Designer.cs">
+      <DependentUpon>FrmtaskMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProject.Designer.cs">
+      <DependentUpon>FrmProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateTask.Designer.cs">
+      <DependentUpon>FrmUpdateTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWorkDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkDetails.Designer.cs">
+      <DependentUpon>FrmWorkDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMoniter.resx">
+      <DependentUpon>FrmMoniter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhaseTrackAdmin.resx">
+      <DependentUpon>FrmPhaseTrackAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhaseTrack.resx">
+      <DependentUpon>FrmPhaseTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmtaskMaster.resx">
+      <DependentUpon>FrmtaskMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProject.resx">
+      <DependentUpon>FrmProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateTask.resx">
+      <DependentUpon>FrmUpdateTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkDetails.resx">
+      <DependentUpon>FrmWorkDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rfid-signal-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-vehicle-tracking-system-gps-tracking-unit-tracker-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-reset-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_card_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-gaeecd9163_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-gaeecd9163_6401.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
